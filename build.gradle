@@ -11,6 +11,14 @@ subprojects {
         }
     }
 
+    dependencies {
+        implementation(libs.assertj)
+        implementation(libs.log4j)
+        implementation(libs.jackson)
+        implementation(libs.apache.common.lang)
+        implementation(libs.tomcat)
+    }
+
     test {
         useJUnitPlatform()
     }
