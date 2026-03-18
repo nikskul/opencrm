@@ -1,0 +1,9 @@
+[submodule "crm-ui"]
+	path = crm-ui
+	url = git@github.com:nikskul/crm-ui.git
+[submodule "customer-audit"]
+	path = customer-audit
+	url = git@github.com:nikskul/customer-audit.git
+[submodule "loyalty"]
+	path = loyalty
+	url = git@githib.com:nikskul/crm-loyalty.git

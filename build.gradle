@@ -1,0 +1,33 @@
+subprojects {
+    apply plugin: 'java'
+    group = 'ru.nikskul.opencrm'
+    repositories {
+        mavenCentral()
+    }
+
+    configurations {
+        configureEach {
+            exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+        }
+    }
+
+    dependencies {
+        implementation(libs.spring.boot.web)
+        implementation(libs.spring.boot.data)
+        implementation(libs.spring.boot.log4j2)
+
+        implementation(libs.spring.doc)
+
+        runtimeOnly(libs.postgresql)
+        implementation(libs.flyway)
+
+        testImplementation(libs.spring.boot.test)
+        testImplementation(libs.testcontainers)
+        testImplementation(libs.testcontainers.psql)
+        testImplementation(libs.junit.jupiter)
+        testRuntimeOnly(libs.junit.platform.launcher)
+    }
+    test {
+        useJUnitPlatform()
+    }
+}

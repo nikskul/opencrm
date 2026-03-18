@@ -1,0 +1,6 @@
+rootProject.name = 'opencrm'
+include(
+        'crm-ui',
+        'customer-audit',
+        'loyalty'
+)
