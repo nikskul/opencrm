@@ -6,4 +6,4 @@
 	url = git@github.com:nikskul/customer-audit.git
 [submodule "loyalty"]
 	path = loyalty
-	url = git@githib.com:nikskul/crm-loyalty.git
+	url = git@github.com:nikskul/crm-loyalty.git
